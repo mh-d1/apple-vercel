@@ -1,0 +1,100 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111111">
+  <link rel="apple-touch-icon" href="sumber/icon-192.png">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-profile">
+
+      <img src="sumber/logo.png" class="profile-image">
+
+      <h2>User</h2>
+
+      <p>@username</p>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="home.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html">My Web App</a>
+
+      <button onclick="closeApp()">
+        Keluar
+      </button>
+
+    </nav>
+
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+
+      <button class="menu-btn" onclick="toggleSidebar()">
+        ☰
+      </button>
+
+      <h1>Gallery</h1>
+
+    </header>
+
+    <section class="gallery-grid">
+
+  <img src="sumber/hero.jpg" alt="" onclick="openPreview(this.src)">
+  <img src="sumber/logo.png" alt="" onclick="openPreview(this.src)">
+  <img src="sumber/hero.jpg" alt="" onclick="openPreview(this.src)">
+
+  <img src="sumber/logo.png" alt="" onclick="openPreview(this.src)">
+  <img src="sumber/hero.jpg" alt="" onclick="openPreview(this.src)">
+  <img src="sumber/logo.png" alt="" onclick="openPreview(this.src)">
+
+</section>
+
+<div class="image-preview" id="imagePreview">
+
+  <div class="preview-topbar">
+
+    <button onclick="closePreview()">
+      ✕
+    </button>
+
+    <span>Gallery</span>
+
+    <button>
+      ⋯
+    </button>
+
+  </div>
+
+  <img id="previewImage">
+
+  <div class="preview-bottombar">
+
+    <button>♡</button>
+    <button>⬇</button>
+    <button>⤴</button>
+    <button>🗑</button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

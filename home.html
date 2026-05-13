@@ -1,0 +1,147 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111111">
+  <link rel="apple-touch-icon" href="sumber/icon-192.png">
+</head>
+<body>
+
+<div class="app-layout">
+
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-profile">
+
+      <img src="sumber/logo.png" class="profile-image">
+
+      <h2>User</h2>
+
+      <p>@username</p>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+  <a href="home.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="index.html">My Web App</a>
+
+  <button onclick="closeApp()">
+    Keluar
+  </button>
+  <button class="install-btn" id="installButton">
+    install app
+  </button>
+
+  <button 
+  class="theme-switch-btn"
+  id="themeButton"
+  onclick="toggleTheme()"
+>
+  Dark Mode
+</button>
+
+</nav>
+
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+
+      <button class="menu-btn" onclick="toggleSidebar()">
+        ☰
+      </button>
+
+      <h1>Home</h1>
+
+
+    </header>
+
+    <section class="hero-section">
+
+      
+
+      
+
+    <section class="hero-section">
+
+  <div class="hero-overlay">
+
+    <img src="sumber/applered.jpeg" alt="">
+
+    <div class="hero-content">
+
+      <span class="hero-label">
+        Apple Style Gallery
+      </span>
+
+      <h2>
+        Captured Moments
+      </h2>
+
+      <p>
+        Beautiful memories organized in a clean and immersive gallery experience.
+      </p>
+
+      <button class="hero-button" onclick="goGallery()">
+        Open Gallery
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+</section>
+
+<section class="card-grid">
+
+  <div class="feature-card">
+
+    <h3>Minimal Design</h3>
+
+    <p>
+      Clean dark interface with smooth layout inspired by premium gallery apps.
+    </p>
+
+  </div>
+
+  <div class="feature-card">
+
+    <h3>Immersive View</h3>
+
+    <p>
+      Open photos in fullscreen with elegant blur background effects.
+    </p>
+
+  </div>
+
+  <div class="feature-card">
+
+    <h3>Responsive</h3>
+
+    <p>
+      Optimized for mobile, tablet, and desktop with seamless experience.
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
