@@ -2,7 +2,7 @@ const CACHE_NAME = "mywebapp-v1";
 
 const urlsToCache = [
   "/",
-  "/one.html",
+  "/index.html",
   "/usn.html",
   "/home.html",
   "/gallery.html",
