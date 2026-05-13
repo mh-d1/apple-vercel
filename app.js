@@ -6,6 +6,9 @@ function goGallery(){
 
 }
 
+function goHome(){
+  window.location.href= "home.html";
+} 
 function toggleSidebar(){
 
   const sidebar = document.getElementById("sidebar");
