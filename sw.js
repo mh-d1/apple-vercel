@@ -32,3 +32,6 @@ self.addEventListener("fetch", event => {
   );
 
 });
+self.addEventListener("install", () => {
+  console.log("Service Worker Installed");
+});
